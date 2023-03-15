@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+   
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+.logo h1{
+    margin-left: 50px;
+    margin-top: 10px;
+    color: rgb(245, 45, 0);
+}
+
+
+nav ul {
+     display: flex;
+     margin-left: 100vh;
+     
+}
+nav ul li {
+    padding: 15px;
+    margin-top: 10px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+}
+nav ul li a:hover{
+    color: rgb(245, 45, 0);
+}
+.section1{
+    width: 100%;
+    height: 81vh;
+    background-color: rgb(0, 0, 0);
+
+ }
+.me img{
+    float: right;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin-right: 100px;
+}
+.info{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.planet img{
+    width: 600px;
+    height: 100px;
+    float: right;
+    padding-left: 200px;
+    margin-top: 50px;
+}
+.info p{
+    margin-top: 40px;
+    text-align: justify;
+}
+.info h1{
+    position: absolute;
+
+
+}
+.info h2{
+    position: relative;
+    margin-left: 170px;
+    margin-top: 7px;
+    color: red;
+}
+button{
+    
+    border-radius: 5px;
+    width: 140px;
+    height: 50px;
+    background-color: red;
+    margin-top: 30px;
+}
+button:hover{
+    background-color: aliceblue;
+  
+}
+.button2{
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 140px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    margin-top: 30px;
+    color: azure;
+}
+.button2:hover{
+ background-color: rgb(245, 45, 0);
+  
+}
+.section2{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+.section2 img{
+    width: 350px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.skills{
+    width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0,0,0, 0.22) ;
+    padding: 20px;
+}
+.skills h1{
+    text-align: center;
+}
+.skills h3{
+    margin: 5px;
+}
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    color: white;
+    font-size: 20px;
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0, 0.12), 0 1px 2px rgba(0,0,0, 0.24) ;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0,0,0, 0.22) ;
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: rgb(43, 1, 253);
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}.css{
+    width: 85%;
+    animation: css 3s;
+}.Javasript{
+    width: 70%;
+    animation:  Javasript 3s;
+}.php{
+    width: 60%;
+    animation: php 3s;
+}
+.section3{
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(80, 74, 74);
+}
+.all-clients-review{
+    display:  grid;
+    margin-left: 100vh;
+    position: relative;
+    
+}
+.clients-review{
+    margin-top: 50vh;
+}
+.exprince{
+    margin-left: 300px;
+}
+
+.all-clients-project img {
+    width: 350px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+    position: absolute;
+}
+.all-clients-project{
+    display: grid;
+     
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90% ;
+    } 
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80% ;
+    } 
+}@keyframes Javasript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70% ;
+    } 
+}@keyframes php {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60% ;
+    } 
+}
+@media screen and (max-width:480px) {
+    header{ 
+        width: 190vh;
+        height: 170px;
+    }
+    .logo h1{
+        margin-left: 80px;
+        margin-top: 30px;
+        font-size: 60px;
+    }
+    nav ul {
+         margin-left: 30vh;
+    }
+    nav ul li {
+        font-size: 40px;
+        padding: 35px;
+        margin-top: 10px;
+    }
+    .section1{
+        width: 190vh;
+        height: 250vh;
+        display: grid;
+    
+     }
+     .me img{
+        margin-top: 0vh;
+        width: 700px;
+        height: 1000px;
+        margin-right: 100px;
+    }
+    .info{
+        position: relative;
+        margin-top: 150px;
+        margin-left: 50px;
+    }
+    .planet img{
+        width: 600px;
+        height: 100px;
+        margin-right: 20vh;
+        position: absolute;
+        margin-top: -130vh;
+    }
+    .info p{
+        margin-top: 40px;
+    }
+    .info h1{
+        position: absolute;
+        font-size: 100px;
+    }
+    .info p{
+     text-align: justify;
+     font-size: 30px;
+    }
+    .info h2{
+        position: relative;
+        margin-left: 80vh;
+        margin-top: 17px;
+        font-size: 80px;
+        color: red;
+    }
+    button{
+        font-size: 40px;
+        border-radius: 5px;
+        width: 300px;
+        height: 100px;
+        background-color: red;
+        margin-top: 130px;
+    }
+    .button2{
+        margin-left: 10px;
+        border-radius: 5px;
+        width: 300px;
+        height: 100px;
+    }
+
+    .section2{
+        width: 190vh;
+        height: 180vh;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+    }
+    .section2 img{
+        display: none;
+    }
+    .skills{
+        height: 140vh;
+        width: 180vh;
+        margin: 40px auto;
+        box-shadow: 0 14px 28px rgba(0,0,0, 0.25), 0 10px 10px rgba(0,0,0, 0.22) ;
+        padding: 20px;
+    }
+    .skills h1{
+        font-size: 50px;
+    }
+    .skills h3{
+        font-size: 40px;
+        margin: 15px;
+    }
+    .skills li{
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .bar{
+        color: white;
+        font-size: 30px;
+        background: #353b48;
+        display: block;
+        height: 40px;
+    }
+    .bar span{
+        height: 40px;
+    }
+}
